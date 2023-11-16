@@ -15,14 +15,18 @@ using System.Windows.Shapes;
 
 namespace _4uTc
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new Suppliers());
+            Manager.MainFrame = MainFrame;
         }
+    }
+    private void Button_click(object sender, RoutedEventArgs e)
+    {
+        Manager.
     }
 }
