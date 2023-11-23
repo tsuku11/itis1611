@@ -7,9 +7,8 @@ using System.Windows.Controls;
 
 namespace _4uTc
 {
-    class Manager
+    class Gg
     {
-        public Frame MainFrame { get; set; }
-
+        public static Frame MainFrame { get; set; }
     }
 }

@@ -25,24 +25,21 @@
 
         </Grid.RowDefinitions>
 
+        <ListView Grid.Row="3" Name="PMaterial">
+            <DataTemplate>
+                <Grid Margin="20" Width="100">
+                    <Grid.RowDefinitions>
+                        
+                    </Grid.RowDefinitions>
+                </Grid>
+            </DataTemplate>
+        </ListView>
+        
         <Image Source="/Resources/icon_abcdefgjhksidqhcfrtrtthgtq.jpg" />
 
-        <DataGrid x:Name="cheutc" Grid.Row="1" Grid.ColumnSpan="3">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="*"/>
-                <DataGridTextColumn Header="Материал" Binding="{Binding Material}" Width="150"/>
-                <DataGridTextColumn Header="Поставщики" Binding="{Binding Supplier}" Width="250"/>
-                <DataGridTemplateColumn Width="auto">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Button Content="Редактировать" Name="ButtonEdit" Click="ButtonEdit_Click"></Button>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
-        </DataGrid>
+        
 
-        <Frame Grid.Row="1" Name="MainFrame"></Frame>    
+        <Frame Grid.Row="1" x:Name="MainFrame" Grid.ColumnSpan="3"></Frame>    
         
         <Grid Grid.Row="0" Background="Crimson" Grid.ColumnSpan="3" Panel.ZIndex="-1"/>
 

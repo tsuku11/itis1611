@@ -15,17 +15,14 @@ using System.Windows.Shapes;
 
 namespace _4uTc
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Логика взаимодействия для Page1.xaml
+    /// </summary>
+    public partial class Page1 : Page
     {
-
-        public MainWindow()
+        public Page1()
         {
             InitializeComponent();
-            MainFrame.Navigate(new Uslugi());
-            Gg.MainFrame = MainFrame;
         }
-
-     
     }
-
 }

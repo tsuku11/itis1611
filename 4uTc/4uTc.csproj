@@ -65,7 +65,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Class1.cs" />
+    <Compile Include="gg.cs" />
     <Compile Include="Materials.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -73,6 +73,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Suppliers.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -82,6 +85,9 @@
     </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Uslugi.xaml.cs">
+      <DependentUpon>Uslugi.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -95,6 +101,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Uslugi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model1.Context.cs">
@@ -102,10 +116,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Designer.cs">
+    <Compile Include="cheps.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>cheps.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -124,12 +138,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Model1.edmx">
+    <EntityDeploy Include="cheps.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>cheps.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <None Include="cheps.edmx.diagram">
+      <DependentUpon>cheps.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -149,14 +163,41 @@
   <ItemGroup>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>cheps.edmx</DependentUpon>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>cheps.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\materials\material_1.jpeg" />
+    <Resource Include="Resources\materials\material_10.jpeg" />
+    <Resource Include="Resources\materials\material_11.jpeg" />
+    <Resource Include="Resources\materials\material_12.jpeg" />
+    <Resource Include="Resources\materials\material_13.jpeg" />
+    <Resource Include="Resources\materials\material_14.jpeg" />
+    <Resource Include="Resources\materials\material_15.jpeg" />
+    <Resource Include="Resources\materials\material_16.jpeg" />
+    <Resource Include="Resources\materials\material_17.jpeg" />
+    <Resource Include="Resources\materials\material_18.jpeg" />
+    <Resource Include="Resources\materials\material_19.jpeg" />
+    <Resource Include="Resources\materials\material_2.jpeg" />
+    <Resource Include="Resources\materials\material_20.jpeg" />
+    <Resource Include="Resources\materials\material_21.jpeg" />
+    <Resource Include="Resources\materials\material_22.jpeg" />
+    <Resource Include="Resources\materials\material_23.jpeg" />
+    <Resource Include="Resources\materials\material_24.jpeg" />
+    <Resource Include="Resources\materials\material_25.jpeg" />
+    <Resource Include="Resources\materials\material_26.png" />
+    <Resource Include="Resources\materials\material_3.jpeg" />
+    <Resource Include="Resources\materials\material_4.jpeg" />
+    <Resource Include="Resources\materials\material_5.jpeg" />
+    <Resource Include="Resources\materials\material_6.jpeg" />
+    <Resource Include="Resources\materials\material_7.jpeg" />
+    <Resource Include="Resources\materials\material_8.jpeg" />
+    <Resource Include="Resources\materials\material_9.jpeg" />
+    <Resource Include="Resources\no-picture.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
